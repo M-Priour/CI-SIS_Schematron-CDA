@@ -1,6 +1,7 @@
-# CI-SIS - Liste des Schematrons CDA de l'Espace de tests
+# CI-SIS - Liste des Schematrons des volets CDA de l'Espace de tests
 ## Contenu du répertoire
-Vous trouverez dans ce repository l'ensembles des schematrons pour les CDA du CI-SIS  utilisés par l'[Espace de tests](https://interop.esante.gouv.fr/EVSClient/cda/validator.seam?standard=CDA-ASIP&extension=ASIP) :
+Vous trouverez dans ce repository l'ensembles des schematrons pour les volets CDA du CI-SIS  utilisés par l'[Espace de tests](https://interop.esante.gouv.fr/EVSClient/cda/validator.seam?standard=CDA-ASIP&extension=ASIP).
+
 Les schematrons ci-dessous sont directement issus de l'outil de spécification (Art-Decor) : 
 - ANS-ANEST-CR-ANEST_2021.01
 - ANS-ANEST-CR-CPA_2021.01
@@ -35,8 +36,8 @@ Les schematrons ci-dessous sont directement issus de l'outil de spécification (
 - ANS-VSM_2013 (v1.4)
 
 
-## Exploitation 
-Pour pouvoir exploiter, nous vous invitions à utiliser la librairie ph-schematron :
+## Validation par schematron 
+Pour pouvoir valider les documents CDA, nous vous invitions à utiliser la librairie ph-schematron :
  -  https://github.com/phax/ph-schematron/
 
 Cette librairie offre une implementation native en java pour faire de la validation via des schématrons. 
@@ -59,7 +60,7 @@ Les performances observés permettent de valider un CR-BIO en quelques secondes.
      final Document aDoc =  aResPure.applySchematronValidation (new StreamSource (fileDocumentCda)); 
 
 
-### Identififier le bon validateur ou schematron pour valider le document CDA
+### Identifier le bon validateur ou schematron pour valider le document CDA
 Pour pouvoir identifier, le bon validateur vous pouvez vous appuyer sur l'attribut `root`  balise `templateId` du document CDA.
 
 
