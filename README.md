@@ -11,7 +11,7 @@ Pour pouvoir valider les documents CDA, nous vous invitions à utiliser la libra
  -  https://github.com/phax/ph-schematron/
 
 Cette librairie offre une implementation native en java pour faire de la validation par schematron.
-Les performances observés permettent de valider un CR-BIO en quelques secondes.
+Les performances observées permettent de valider un CR-BIO en quelques secondes.
 
 ### Utilisation de ph-schematron 
 `Exemple de code :`
